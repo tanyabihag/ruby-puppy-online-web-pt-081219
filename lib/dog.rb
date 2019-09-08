@@ -11,10 +11,10 @@ class Dog
   end
   
   def self.clear_all
-    @@all
+    @@all.clear_all
   end
   
   def self.print_all
-    @all
+    @all.print_all
   end
 end
