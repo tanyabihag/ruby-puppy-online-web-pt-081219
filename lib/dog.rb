@@ -18,12 +18,9 @@ class Dog
     @@all
   end
 
-  def self.print_all
-    names_list = [ ]
-    @@names.each do |thing|
-      if names_list.include?(thing) == false
-        names_list << "#{thing}"
-      end
+    def self.print_all
+    @@all.each{|dog| puts dog.name}
+  end
     end
   puts names_list
 end
